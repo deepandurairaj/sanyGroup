@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    /* border: 1px solid red; */
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+/* .noto-sans-<uniquifier> {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+:root{
+    --primary-text-color: #db010a;
+    --bg-white: #fff;
+    --text-black: #000000;
+    --footer-bg: #212429;
+}
+.header-wraper .navbar-collapse{
+    flex-grow: unset !important;
+}
+.header-wraper .navbar-nav{
+    gap: 30px;
+}
+.header-wraper .nav-link{
+    color: var(--text-black) !important;
+}
+.header-wraper .nav-link:hover{
+    color: var(--primary-text-color) !important;
+}
+
+.header-wraper ul li a{
+    position: relative !important;
+}
+.header-wraper ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-text-color);
+}
+
+.header-wraper ul li a::before {
+    transform: scale(0, 1);
+    transition: transform .3s ease-in-out;
+}
+.header-wraper  ul li a:hover::before {
+    transform: scale(1, 1);
+}
+.header-wraper li a.active,li a:hover {
+    color: var(--primary-text-color);
+    transition: all .3s ease-in-out
+}
+.header-wraper .bar{
+    color: var(--primary-text-color);
+}
+.header-wraper .navbar-toggler{
+    color: transparent !important;
+}
+.header-wraper .searchDiv label{
+    color: var(--text-black);
+}
+.header-wraper .searchDiv input{
+    margin-left: 10px;
+}
+
+/* ------------------------------Hero Section----------------------------------- */
+
+.carousel-indicators button{
+    background-color: var(--primary-text-color) !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: none !important;
+}
+.heroSection video{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.heroColumns{
+    padding: 0 !important;
+}
+.hero-carousel{
+    position: relative !important;
+}
+.heroText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 80px;
+}
+.heroText p{
+    margin: 0 !important;
+    color: var(--bg-white);
+    font-weight: bold;
+    font-size: 30px;
+}
+.hero-link{
+    display: flex;
+    justify-content: center;
+}
+.hero-link a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--bg-white);
+}
+.hero-link a:hover{
+    color: var(--bg-white);
+}
+.hero-link-i{
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--primary-text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+.hero-link-i i{
+    font-size: 20px;
+    color: var(--bg-white);
+}
+/* -------------------About Section------------------- */
+.aboutSection video{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.aboutSection img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.aboutCard{
+    padding: 0 !important;
+}
+.aboutCard .card{
+    position: relative;
+    border: 0 !important;
+}
+.aboutCard .card-info{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 40px;
+}
+.aboutCard .card-info p{
+    color: var(--bg-white);
+    margin: 0 !important;
+}
+.aboutCard .card-p{
+    font-weight: bold;
+    padding: 0 100px;
+    font-size: 20px;
+}
+/* map section */
+.achiveCard .card{
+    margin-bottom: 10px;
+}
+.achiveCard .card p{
+    margin: 0 !important;
+}
+.achiveCard .card{
+    border: 0 !important;
+    background-color: transparent !important;
+}
+.achiveCard .card .cardNum{
+    color: var(--primary-text-color) !important;
+    font-size: 50px;
+}
+.mapSection .achiveGruop{
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    border: 0 !important;
+}
+.mapSection .achiveGruop .achiveCardSet{
+    position: absolute;
+    bottom: 0;
+}
+
+/* OverView Section */
+.overviewSection .carousel-item{
+    position: relative;
+}
+.overview-Data{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.overview-Data p{
+    margin: 0 !important;
+    font-size: 25px;
+}
+.overview-link{
+    display: flex;
+    overflow: hidden;
+}
+.overview-link a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--text-black);
+    font-weight: bold;
+}
+.overview-link a:hover{
+    color: var(--bg-white);
+}
+
+.overview-link-i{
+    height: 30px;
+    width: 30px;
+    border: 2px solid var(--text-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--footer-bg);
+    color: var(--bg-white);
+}
+footer .container{
+    padding-top: 50px;
+}
+footer ul{
+    padding: 0 !important;
+}
+footer ul li{
+    list-style-type: none;
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+footer ul li a{
+    text-decoration: none;
+}
+footer p{
+    font-weight: bold;
+}
+footer .footer-media{
+    display: flex;
+}
+.footer-media li a{
+    color: var(--bg-white) !important;
+}
+.footer-media li a i{
+    font-size: 25px;
+}
+.footer-media li{
+    margin-right: 10px;
+}

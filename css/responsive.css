@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+/* .noto-sans-<uniquifier> {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+:root{
+    --primary-text-color: #db010a;
+    --bg-white: #fff;
+    --text-black: #000000;
+}
+
+@media(max-width:993px){
+    .header-wraper .navbar-nav{
+        gap: 0 !important;
+    }
+    .header-wraper .searchDiv{
+        margin: 0  !important;
+    }
+    .header-wraper ul li a::before {
+        width: 7%;
+    }
+    .header-wraper .searchDiv input{
+        width: 20% !important;
+    }
+}
+@media(max-width:768px){
+    .header-wraper .navbar-nav{
+        gap: 0 !important;
+    }
+    .header-wraper .searchDiv{
+        margin: 0  !important;
+    }
+    .header-wraper ul li a::before {
+        width: 16%;
+    }
+    .header-wraper .searchDiv input{
+        width: 25% !important;
+    }
+
+    .mapSection .achiveGruop .achiveCardSet{
+        position: relative;
+    }
+    
+}
+@media(max-width:576px){
+    .header-wraper .navbar-nav{
+        gap: 0 !important;
+    }
+    .header-wraper .searchDiv{
+        margin: 0  !important;
+    }
+    .header-wraper ul li a::before {
+        width: 13%;
+    }
+    .header-wraper .searchDiv input{
+        width: 30% !important;
+    }
+
+    .aboutCard .card-p{
+        padding: 0;
+        font-size: 15px;
+    }
+    .aboutCard .card-info{
+        bottom: 10px;
+    }
+    .hero-link-i{
+        height: 20px;
+        width: 20px;
+        margin-top: 3px;
+    }
+    .hero-link-i i{
+        font-size: 10px;
+    }
+    .hero-link-i{
+        height: 20px;
+        width: 20px;
+        border: 2px solid var(--primary-text-color);
+    }
+    .hero-link a{
+        margin-left: 2px;
+    }
+
+    /* overview Section */
+    .overview-Data{
+        top: 20px;
+        left: 10px;
+    }
+    .overview-Data p{
+        font-size: 10px;
+    }
+    .overview-link a{
+        margin-right: 5px;
+        font-size: 10px;
+    }
+    .overview-link-i{
+        height: 15px;
+        width: 15px;
+    }
+    .overview-link-i i{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:360px){
+    .heroText{
+        bottom: 40px;
+    }
+    .heroText p{
+        font-size: 20px;
+    }
+}
